@@ -8,12 +8,120 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <h1>Hello!!!</h1>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nihil
-      exercitationem facere porro magnam fugiat possimus rerum, nemo vitae
-      laborum, perferendis libero doloribus, ratione quas quo temporibus
-      assumenda! Quaerat, unde.
-    </p>
+    <section class="header">
+      <nav class="navbar navbar--light">
+        <div class="navbar__collapse">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">男款</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">女款</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">最新消息</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">客製商品</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo navbar__logo">
+          <a href="#" class="logo__link"
+            ><img
+              class="logo__img"
+              src="./img/Logo@2x.png"
+              alt="alpha shop"
+          /></a>
+        </div>
+        <div class="tool navbar__tool">
+          <a class="tool__link" href=""
+            ><img class="tool__icon" src="./img/icon-search@2x.png" alt=""
+          /></a>
+          <a class="tool__link" href=""
+            ><img class="tool__icon" src="./img/icon-cart@2x.png" alt=""
+          /></a>
+          <a class="tool__link" href=""
+            ><img class="tool__icon" src="./img/icon-dark@2x.png" alt=""
+          /></a>
+        </div>
+      </nav>
+    </section>
+
+    <section class="progress">
+      <p class="progress__title">結帳</p>
+      <div class="progress__bar"></div>
+    </section>
+    <section class="main">
+      <section class="main__content">
+        <form action="" class="address">
+          <p class="address__title">寄送地址</p>
+          <div class="address__group">
+            <label for="" class="i">稱謂</label>
+            <input type="text" />
+          </div>
+          <button class="btn address__btn btn--active">下一步 &#8594;</button>
+        </form>
+      </section>
+      <section class="main__sub">
+        <div class="cart">
+          <p class="cart__title">購物籃</p>
+          <ul class="cart__list">
+            <li class="cart__item"></li>
+            <li class="cart__item"></li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <section class="footer">
+      <div class="logo footer__logo">
+        <a href="#" class="logo__link"
+          ><img
+            class="logo__img"
+            src="./img/Logo@2x.png"
+            alt="alpha shop"
+        /></a>
+      </div>
+      <div class="menu footer__menu">
+        <p class="menu__title">客戶服務</p>
+        <ul class="menu__list">
+          <li class="menu__item">運送說明</li>
+          <li class="menu__item">退換貨相關</li>
+          <li class="menu__item">付款資訊</li>
+          <li class="menu__item">FAQ</li>
+        </ul>
+      </div>
+      <div class="menu footer__menu">
+        <p class="menu__title">關於我們</p>
+        <ul class="menu__list">
+          <li class="menu__item">品牌故事</li>
+          <li class="menu__item">媒體連繫</li>
+          <li class="menu__item">Press kit</li>
+          <li class="menu__item"></li>
+        </ul>
+      </div>
+      <div class="menu footer__menu">
+        <p class="menu__title">資訊</p>
+        <ul class="menu__list">
+          <li class="menu__item">隱私權政策</li>
+          <li class="menu__item">Cookie</li>
+          <li class="menu__item">GDPR</li>
+        </ul>
+      </div>
+      <div class="menu footer__menu">
+        <p class="menu__title">追蹤ALPHA SHOP</p>
+        <ul class="menu__list">
+          <li class="menu__item">+886 02123-45678</li>
+          <li class="menu__item">
+            <img class="menu__social" src="/img/Icon-facebook@2x.png" alt="">
+            <img class="menu__social" src="/img/Icon-instagram@2x.png" alt="">
+            <img class="menu__social" src="/img/Icon-whatsapp@2x.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
