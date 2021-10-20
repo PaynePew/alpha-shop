@@ -1,0 +1,36 @@
+//Variables
+
+$baseSize: 12px;
+$baseLineSize: 10px;
+$baseWeight: 400;
+$baseLineHeight: 10px;
+$sizeLevel: 4px;
+$weightLevel: 100;
+$paddingLevel: 1.2;
+
+
+
+$themes: (
+  "dark": (
+    "primary": rgba(18, 18, 18, 1) ,
+    "secondary":rgba(255, 255, 255, 1), 
+    "btn-p":rgba(246, 117, 153, 1),
+    "btn-s":rgba(255, 255, 255, 1), 
+  ),
+  "light": (
+    "primary": rgba(255, 255, 255, 1),
+    "secondary": rgba(0, 0, 0, 1),
+    "btn-p":rgba(246, 117, 153, 1),
+    "btn-s":rgba(255, 255, 255, 1), 
+  ),
+);
+
+// header-size:16px
+// 結帳大標題:32px
+// 寄送地址:24px lineH:24px weight:700
+// footer標題:24px lineH:24px 700
+// footer小字:16px lineH:17px 400
+
+// form:
+// label:12px; line-height:16px weight700;
+// placeholder:12px; line-height:16px weight400;
