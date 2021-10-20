@@ -1,0 +1,57 @@
+.navbar {
+  @extend %flex;
+  position:relative;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  height:56px;
+
+  &__hamburger{
+    position:absolute;
+    width: 20px;
+    height:15px;
+    top:20px;
+    left:17px;
+  }
+  @include desktop{
+    &__hamburger{
+      display:none;
+    }
+  }
+
+  &__logo{
+    @extend %flex;
+    justify-content: center;
+  }
+  &__collapse {
+    display: none;
+  }
+  &__tool {
+    display: none;
+  }
+  @include desktop {
+    height:60px;
+    &__hamburger{
+      display:none;
+    }
+    &__collapse {
+      display:flex;
+    }
+    &__tool {
+      display:flex;
+    }
+    &__list {
+      display:flex;
+    }
+    &__item {
+      list-style: none;
+      padding: 0 16px;
+    }
+    &__link {
+      @include font(1);
+      @include themeGen() {
+        color: getThemeVal("secondary");
+      }
+    }
+  }
+}

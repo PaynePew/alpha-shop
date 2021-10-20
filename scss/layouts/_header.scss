@@ -1,0 +1,9 @@
+//Header
+
+.header{
+  @include themeGen() {
+    background-color: getThemeVal("primary");
+    color: getThemeVal("secondary");
+  }
+
+}

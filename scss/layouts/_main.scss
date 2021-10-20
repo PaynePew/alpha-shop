@@ -1,0 +1,8 @@
+//Main
+
+.main {
+  @include themeGen() {
+    background-color: getThemeVal("primary");
+    color: getThemeVal("secondary");
+  }
+}

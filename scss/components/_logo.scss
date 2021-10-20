@@ -1,0 +1,13 @@
+.logo {
+
+  &__img {
+    width: 136px;
+    height:24px;
+  }
+  @include desktop {
+    &__img {
+      width: 170px;
+      height:30px;
+    }
+  }
+}

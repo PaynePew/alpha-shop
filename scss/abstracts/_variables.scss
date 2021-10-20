@@ -8,20 +8,18 @@ $sizeLevel: 4px;
 $weightLevel: 100;
 $paddingLevel: 1.2;
 
-
-
 $themes: (
   "dark": (
-    "primary": rgba(18, 18, 18, 1) ,
-    "secondary":rgba(255, 255, 255, 1), 
-    "btn-p":rgba(246, 117, 153, 1),
-    "btn-s":rgba(255, 255, 255, 1), 
+    "primary": rgba(18, 18, 18, 1),
+    "secondary": rgba(255, 255, 255, 1),
+    "btn-p": rgba(246, 117, 153, 1),
+    "btn-s": rgba(255, 255, 255, 1),
   ),
   "light": (
     "primary": rgba(255, 255, 255, 1),
     "secondary": rgba(0, 0, 0, 1),
-    "btn-p":rgba(246, 117, 153, 1),
-    "btn-s":rgba(255, 255, 255, 1), 
+    "btn-p": rgba(246, 117, 153, 1),
+    "btn-s": rgba(255, 255, 255, 1),
   ),
 );
 
