@@ -7,9 +7,9 @@
     <title>Alpha Shop</title>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <body>
+  <body class="theme-light">
     <section class="header">
-      <nav class="navbar navbar--light">
+      <nav class="navbar">
         <div class="navbar__collapse">
           <ul class="navbar__list">
             <li class="navbar__item">
@@ -31,10 +31,7 @@
         </div>
         <div class="logo navbar__logo">
           <a href="#" class="logo__link"
-            ><img
-              class="logo__img"
-              src="./img/Logo@2x.png"
-              alt="alpha shop"
+            ><img class="logo__img" src="./img/Logo@2x.png" alt="alpha shop"
           /></a>
         </div>
         <div class="tool navbar__tool">
@@ -44,9 +41,12 @@
           <a class="tool__link" href=""
             ><img class="tool__icon" src="./img/icon-cart@2x.png" alt=""
           /></a>
-          <a class="tool__link" href=""
-            ><img class="tool__icon" src="./img/icon-dark@2x.png" alt=""
-          /></a>
+          <img
+            class="tool__icon"
+            onClick="toggleTheme()"
+            src="./img/icon-dark@2x.png"
+            alt=""
+          />
         </div>
       </nav>
     </section>
@@ -79,10 +79,7 @@
     <section class="footer">
       <div class="logo footer__logo">
         <a href="#" class="logo__link"
-          ><img
-            class="logo__img"
-            src="./img/Logo@2x.png"
-            alt="alpha shop"
+          ><img class="logo__img" src="./img/Logo@2x.png" alt="alpha shop"
         /></a>
       </div>
       <div class="menu footer__menu">
@@ -116,12 +113,13 @@
         <ul class="menu__list">
           <li class="menu__item">+886 02123-45678</li>
           <li class="menu__item">
-            <img class="menu__social" src="/img/Icon-facebook@2x.png" alt="">
-            <img class="menu__social" src="/img/Icon-instagram@2x.png" alt="">
-            <img class="menu__social" src="/img/Icon-whatsapp@2x.png" alt="">
+            <img class="menu__social" src="/img/Icon-facebook@2x.png" alt="" />
+            <img class="menu__social" src="/img/Icon-instagram@2x.png" alt="" />
+            <img class="menu__social" src="/img/Icon-whatsapp@2x.png" alt="" />
           </li>
         </ul>
       </div>
     </section>
+    <script src="src/index.js"></script>
   </body>
 </html>
