@@ -36,3 +36,30 @@
   }
 }
 
+//產生themes
+$scopedTheme: null;
+@mixin themeGen($allThemesMap: $themes) {
+  @each $themeName, $themeMap in $allThemesMap {
+    .theme-#{$themeName} & {
+      // 建立臨時map
+      $scopedTheme: () !global;
+      @each $variableName, $variableValue in $themeMap {
+        // 將themeMap的key value merge進臨時theme
+        $scopedTheme: map-merge(
+          $scopedTheme,
+          (
+            $variableName: $variableValue,
+          )
+        ) !global;
+      }
+      // 傳進如background, color等內容
+      @content;
+      // reset臨時scope
+      $scopedTheme: null !global;
+    }
+  }
+}
+//從臨時scopedTheme拿取value
+@function getThemeVal($themeVar) {
+  @return map-get($scopedTheme, $themeVar);
+}
