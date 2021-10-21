@@ -43,5 +43,34 @@
     border: 1px solid #4a4a4a;
     box-sizing: border-box;
     border-radius: 4px;
+    height:40px;
+  }
+  @include desktop{
+    max-width: 540px;
+    &__content{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__group:nth-child(1) {
+      flex-grow:calc(160/540);
+      margin-right: 30px;
+    }
+    &__group:nth-child(2) {
+      flex-grow:calc(355/540);
+    }
+    &__group:nth-child(3) {
+      flex-grow:calc(355/540);
+      margin-right: 30px;
+    }
+    &__group:nth-child(4) {
+      flex-grow:calc(160/540);
+    }
+    &__group:nth-child(5) {
+      flex-grow:calc(160/540);
+      margin-right: 30px;
+    }
+    &__group:nth-child(6) {
+      flex-grow:calc(355/540);
+    }
   }
 }

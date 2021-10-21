@@ -3,6 +3,11 @@
 .cart {
   @extend %flex;
   flex-direction: column;
+  padding:16px;
+  border: 1px solid #f0f0f5;
+  box-sizing: border-box;
+  border-radius: 8px;
+
   &__item {
     @extend %flex;
     margin-bottom: 18px;
@@ -83,4 +88,22 @@
   &__footerName{
     @include font(0.5);
   }
+  @include desktop{
+    padding:24px;
+    
+
+    &__title{
+      display:block;
+      @include font(1.5,3);
+    }
+    &__content{
+      flex-direction: row;
+      padding-left:21px;
+    }
+    &__des {
+      align-items: flex-start;
+    }
+  }
 }
+
+
