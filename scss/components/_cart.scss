@@ -42,6 +42,7 @@
   &__price {
     text-align: right;
     @include font(1, 3);
+    font-family: $number-font-family;
   }
   &__count {
     @extend %flex;
