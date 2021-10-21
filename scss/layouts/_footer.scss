@@ -1,6 +1,14 @@
 //Footer
 .footer {
+  @include themeGen($themes){
+    background-color: getThemeVal(footer-p);
+    color:getThemeVal(secondary);
+  }
+  display:none;
   .logo__img {
       width: 175px;
+  }
+  @include desktop{
+    display:flex;
   }
 }
