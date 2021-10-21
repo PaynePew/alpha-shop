@@ -6,7 +6,7 @@
   @if $level <0 {
     $level: 0;
   }
-  @return $baseSize + $sizeLevel * round($level);
+  @return $baseSize + $sizeLevel * ($level);
 }
 //字體權重
 @function weight($level: 0) {

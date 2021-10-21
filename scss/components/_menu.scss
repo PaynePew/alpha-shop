@@ -1,0 +1,9 @@
+//Menu
+
+.menu{
+  &__item{
+    @include themeGen($themes){
+      color:getThemeVal(footer-s);
+    }
+  }
+}

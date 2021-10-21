@@ -40,12 +40,8 @@
           /></a>
         </div>
         <div class="tool navbar__tool">
-          <a class="tool__link" href=""
-            ><img class="tool__icon" src="./img/icon-search@2x.png" alt=""
-          /></a>
-          <a class="tool__link" href=""
-            ><img class="tool__icon" src="./img/icon-cart@2x.png" alt=""
-          /></a>
+          <img class="tool__icon" src="./img/icon-search@2x.png" alt="" />
+          <img class="tool__icon" src="./img/icon-cart@2x.png" alt="" />
           <img
             class="tool__icon"
             onClick="toggleTheme()"
@@ -123,22 +119,56 @@
                 />
               </div>
             </div>
-            
           </form>
         </section>
         <section class="main__sub">
           <div class="cart">
             <p class="cart__title">購物籃</p>
-            <ol class="cart__list">
-              <li class="cart__item">
-                <img src="" alt="">
-                
-              </li>
-              <li class="cart__item"></li>
-            </ol>
+            <div class="cart__item">
+              <div class="cart__imgFrame">
+                <img src="/img/item-1@2x.png" alt="" class="cart__img" />
+              </div>
+              <div class="cart__content">
+                <div class="cart__des">
+                  <p class="cart__name">破壞補丁修身牛仔褲</p>
+                  <div class="cart__count">
+                    <span class="cart__down">&#8722;</span>
+                    <span class="cart__number">1</span>
+                    <span class="cart__up">&#43;</span>
+                  </div>
+                </div>
+                <div class="cart__price">$3,999</div>
+              </div>
+            </div>
+            <div class="cart__item">
+              <div class="cart__imgFrame">
+                <img src="/img/item-2@2x.png" alt="" class="cart__img" />
+              </div>
+              <div class="cart__content">
+                <div class="cart__des">
+                  <p class="cart__name">刷色直筒牛仔褲</p>
+                  <div class="cart__count">
+                    <span class="cart__down">&#8722;</span>
+                    <span class="cart__number">1</span>
+                    <span class="cart__up">&#43;</span>
+                  </div>
+                </div>
+                <div class="cart__price">$1,299</div>
+              </div>
+            </div>
+            <div class="cart__footer">
+              <span class="cart__footerName">運費</span>
+              <span class="cart__price">免運</span>
+            </div>
+            <div class="cart__footer">
+              <span class="cart__footerName">小計</span>
+              <span class="cart__price">$5,298</span>
+            </div>
           </div>
         </section>
-        <button class="btn main__btn btn--active">下一步 &#8594;</button>
+        <section class="main__subNav">
+          <button class="btn main__btn btn--active">下一步 &#8594;</button>
+        </section>
       </section>
     </section>
     <section class="footer">
