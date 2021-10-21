@@ -54,19 +54,24 @@
 
     <section class="main">
       <section class="main__container">
-        <section class="progress main__progress">
-          <p class="progress__title">結帳</p>
-          <ul class="progress__bar">
-            <li class="progress__item">
-              <span class="progress__des">寄送地址</span>
-            </li>
-            <li class="progress__item">
-              <span class="progress__des">運送方式</span>
-            </li>
-            <li class="progress__item">
-              <span class="progress__des">付款資訊</span>
-            </li>
-          </ul>
+        <section class="stepper main__stepper">
+          <p class="stepper__title">結帳</p>
+          <div class="stepper__container">
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--active">1</span>
+              <span class="stepper__des stepper__des--active">寄送地址</span>
+            </div>
+            <span class="stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--done">2</span>
+              <span class="stepper__des stepper__des--done">運送方式</span>
+            </div>
+            <span class="stepper__bar--disable"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--disable">3</span>
+              <span class="stepper__des stepper__des--disable">付款資訊</span>
+            </div>
+          </div>
         </section>
         <section class="main__content">
           <form action="" class="address">
