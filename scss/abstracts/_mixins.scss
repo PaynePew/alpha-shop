@@ -24,10 +24,11 @@
   @return $baseLineHeight * $count;
 }
 
-@mixin font($level: 1, $line-height: auto) {
+@mixin font($level: 1, $weightLevel: 0, $line-height: auto) {
   $size: font($level);
   $line: rhythm($size);
 
+  font-weight: weight($weightLevel);
   font-size: $size;
   @if $line-height == auto or $line-height < $line {
     line-height: $line;
