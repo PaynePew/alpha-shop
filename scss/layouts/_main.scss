@@ -5,4 +5,44 @@
     background-color: getThemeVal("primary");
     color: getThemeVal("secondary");
   }
+
+  @extend %flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    flex-grow: 1;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+  &__btn{
+      width:100%;
+  }
+  @include desktop {
+    &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 1110px;
+    }
+    &__progress {
+      flex-basis: 100%;
+    }
+    &__content {
+      flex-basis: 50%;
+    }
+    &__sub {
+      flex-basis: 50%;
+      margin-top: -80px;
+      padding-left: 154px;
+      border: 1px solid #f0f0f5;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+    &__btn{
+      width: 174px;
+    }
+
+  }
 }

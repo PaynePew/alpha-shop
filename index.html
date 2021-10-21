@@ -9,13 +9,12 @@
   </head>
   <body class="theme-light">
     <section class="header">
-
       <nav class="navbar">
         <img
-        class="navbar__hamburger"
-        src="/img/bx_bx-menu-alt-left@2x.png"
-        alt=""
-      />
+          class="navbar__hamburger"
+          src="/img/bx_bx-menu-alt-left@2x.png"
+          alt=""
+        />
         <div class="navbar__collapse">
           <ul class="navbar__list">
             <li class="navbar__item">
@@ -57,29 +56,89 @@
       </nav>
     </section>
 
-    <section class="progress">
-      <p class="progress__title">結帳</p>
-      <div class="progress__bar"></div>
-    </section>
     <section class="main">
-      <section class="main__content">
-        <form action="" class="address">
-          <p class="address__title">寄送地址</p>
-          <div class="address__group">
-            <label for="" class="i">稱謂</label>
-            <input type="text" />
-          </div>
-          <button class="btn address__btn btn--active">下一步 &#8594;</button>
-        </form>
-      </section>
-      <section class="main__sub">
-        <div class="cart">
-          <p class="cart__title">購物籃</p>
-          <ul class="cart__list">
-            <li class="cart__item"></li>
-            <li class="cart__item"></li>
+      <section class="main__container">
+        <section class="progress main__progress">
+          <p class="progress__title">結帳</p>
+          <ul class="progress__bar">
+            <li class="progress__item">
+              <span class="progress__des">寄送地址</span>
+            </li>
+            <li class="progress__item">
+              <span class="progress__des">運送方式</span>
+            </li>
+            <li class="progress__item">
+              <span class="progress__des">付款資訊</span>
+            </li>
           </ul>
-        </div>
+        </section>
+        <section class="main__content">
+          <form action="" class="address">
+            <p class="address__title">寄送地址</p>
+            <div class="address__content">
+              <div class="address__group">
+                <label class="address__label" for="" class="i">稱謂</label>
+                <select name="" class="address__input">
+                  <option value="先生">先生</option>
+                </select>
+              </div>
+              <div class="address__group">
+                <label for="" class="address__label">姓名</label>
+                <input
+                  type="text"
+                  placeholder="請輸入姓名"
+                  class="address__input"
+                />
+              </div>
+              <div class="address__group">
+                <label for="" class="address__label">電話</label>
+                <input
+                  type="text"
+                  placeholder="請輸入行動電話"
+                  class="address__input"
+                />
+              </div>
+              <div class="address__group">
+                <label for="" class="address__label">Email</label>
+                <input
+                  type="text"
+                  placeholder="請輸入電子郵件"
+                  class="address__input"
+                />
+              </div>
+              <div class="address__group">
+                <label for="" class="address__label">縣市</label>
+                <input
+                  type="text"
+                  placeholder="請輸入縣市"
+                  class="address__input"
+                />
+              </div>
+              <div class="address__group">
+                <label for="" class="address__label">地址</label>
+                <input
+                  type="text"
+                  placeholder="請輸入地址"
+                  class="address__input"
+                />
+              </div>
+            </div>
+            
+          </form>
+        </section>
+        <section class="main__sub">
+          <div class="cart">
+            <p class="cart__title">購物籃</p>
+            <ol class="cart__list">
+              <li class="cart__item">
+                <img src="" alt="">
+                
+              </li>
+              <li class="cart__item"></li>
+            </ol>
+          </div>
+        </section>
+        <button class="btn main__btn btn--active">下一步 &#8594;</button>
       </section>
     </section>
     <section class="footer">

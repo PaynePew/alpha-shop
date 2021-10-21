@@ -1,0 +1,35 @@
+//Progress
+
+.progress {
+  &__title {
+    @include font(3, 3);
+  }
+  &__bar{
+    @extend %flex;
+    list-style: none;
+  }
+  &__item{
+    position:relative;
+  }
+  &__des{
+    display:none;
+  }
+
+  &__item::before{
+    content:'';
+    position:absolute;
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    background-color: black;
+    top:0;
+    bottom: 0;
+    left:-32px;
+    margin:auto;
+  }
+  @include desktop{
+    &__item + &__item{
+      margin-left:156px;
+    }
+  }
+}
