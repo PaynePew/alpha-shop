@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alpha Shop</title>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body class="theme-light">
     <section class="header">
@@ -17,7 +17,7 @@
         </div>
         <img
           class="navbar__hamburger"
-          src="/img/bx_bx-menu-alt-left@2x.png"
+          src="./img/bx_bx-menu-alt-left@2x.png"
           alt=""
         />
         <div class="navbar__collapse">
@@ -54,7 +54,26 @@
 
     <section class="main">
       <section class="main__container">
-        <section class="stepper main__stepper">
+        <section class="stepper main__stepper pageOne isOpen ">
+          <p class="stepper__title">結帳</p>
+          <div class="stepper__container">
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--active">1</span>
+              <span class="stepper__des stepper__des--active">寄送地址</span>
+            </div>
+            <span class="stepper__bar stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--disable">2</span>
+              <span class="stepper__des stepper__des--disable">運送方式</span>
+            </div>
+            <span class="stepper__bar stepper__bar--disable"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--disable">3</span>
+              <span class="stepper__des stepper__des--disable">付款資訊</span>
+            </div>
+          </div>
+        </section>
+        <section class="stepper main__stepper pageTwo">
           <p class="stepper__title">結帳</p>
           <div class="stepper__container">
             <div class="stepper__item">
@@ -131,7 +150,7 @@
             <p class="cart__title">購物籃</p>
             <div class="cart__item">
               <div class="cart__imgFrame">
-                <img src="/img/item-1@2x.png" alt="" class="cart__img" />
+                <img src="./img/item-1@2x.png" alt="" class="cart__img" />
               </div>
               <div class="cart__content">
                 <div class="cart__des">
@@ -147,7 +166,7 @@
             </div>
             <div class="cart__item">
               <div class="cart__imgFrame">
-                <img src="/img/item-2@2x.png" alt="" class="cart__img" />
+                <img src="./img/item-2@2x.png" alt="" class="cart__img" />
               </div>
               <div class="cart__content">
                 <div class="cart__des">
@@ -172,7 +191,7 @@
           </div>
         </section>
         <section class="main__subNav">
-          <button class="btn main__btn btn--active">下一步 &#8594;</button>
+          <button class="btn main__btn btn--active" onClick="nextPage()" id="nextBtn">下一步 &#8594;</button>
         </section>
       </section>
     </section>
@@ -215,17 +234,17 @@
             <li class="menu__item">
               <img
                 class="menu__social"
-                src="/img/Icon-facebook@2x.png"
+                src="./img/Icon-facebook@2x.png"
                 alt=""
               />
               <img
                 class="menu__social"
-                src="/img/Icon-instagram@2x.png"
+                src="./img/Icon-instagram@2x.png"
                 alt=""
               />
               <img
                 class="menu__social"
-                src="/img/Icon-whatsapp@2x.png"
+                src="./img/Icon-whatsapp@2x.png"
                 alt=""
               />
             </li>
@@ -233,6 +252,6 @@
         </div>
       </section>
     </section>
-    <script src="src/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
