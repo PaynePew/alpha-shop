@@ -47,7 +47,8 @@
   @include desktop{
     max-width: 540px;
     &__content{
-      grid-template-columns: repeat(5, [col-start] 12% [col-middle] 5.5% [colend]) 12%;
+      width:100%;
+      grid-template-columns: repeat(5, [col-start] 12% [col-middle] 5.5% [colend]) 12.5%;
       
     }
     &__group:nth-child(1) {
