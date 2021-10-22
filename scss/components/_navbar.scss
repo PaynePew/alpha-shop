@@ -1,9 +1,9 @@
 .navbar {
   @extend %flex;
-  position:relative;
   justify-content: center;
   align-items: center;
   margin:auto;
+  padding:0 15px;
   height:56px;
 
   &__hamburger{
@@ -27,6 +27,9 @@
   &__tool {
     display: none;
   }
+  &__item{
+    @extend %flex;
+  }
 
   @include desktop {
     height:60px;
@@ -39,9 +42,8 @@
     &__collapse {
       display:flex;
       min-width: 384px;
-    }
-    &__logo{
-
+      order:-1;
+      
     }
     &__tool {
       display:flex;
@@ -50,7 +52,8 @@
 
     &__list {
       display:flex;
-      justify-content: start;
+      justify-content: flex-start;
+      padding:0;
     }
     &__item {
       list-style: none;

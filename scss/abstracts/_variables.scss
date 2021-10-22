@@ -21,6 +21,8 @@ $themes: (
     "icon-number-active-s":rgba(51, 51, 51, 1),
     "icon-number-active-d":rgba(255, 255, 255, 1),
     "icon-number-disable":rgba(255, 255, 255, 0.4),
+    "icon-bar-active": rgba(255, 255, 255, 1),
+    "icon-bar-disable": rgba(240, 240, 245, 0.4),
   ),
   "light": (
     "primary": rgba(255, 255, 255, 1),
@@ -34,6 +36,9 @@ $themes: (
     "icon-number-active-s":rgba(51, 51, 51, 1),
     "icon-number-active-d":rgba(255, 255, 255, 1),
     "icon-number-disable":rgba(175, 177, 189, 1),
+    "icon-bar-active": rgba(0, 0, 0, 1),
+    "icon-bar-disable": rgba(240, 240, 245, 1),
+    
   ),
 );
 

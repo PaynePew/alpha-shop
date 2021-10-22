@@ -41,36 +41,32 @@
   &__input {
     padding: 12px 18px;
     border: 1px solid #4a4a4a;
-    box-sizing: border-box;
     border-radius: 4px;
     height:40px;
   }
   @include desktop{
     max-width: 540px;
     &__content{
-      display: flex;
-      flex-wrap: wrap;
+      grid-template-columns: repeat(5, [col-start] 65px [col-middle] 30px [colend]) 65px;
+      
     }
     &__group:nth-child(1) {
-      flex-grow:calc(160/540);
-      margin-right: 30px;
+      grid-column: 1/4;
     }
     &__group:nth-child(2) {
-      flex-grow:calc(355/540);
+      grid-column: 5/12;
     }
     &__group:nth-child(3) {
-      flex-grow:calc(355/540);
-      margin-right: 30px;
+      grid-column: 1/6;
     }
     &__group:nth-child(4) {
-      flex-grow:calc(160/540);
+      grid-column: 7/12;
     }
     &__group:nth-child(5) {
-      flex-grow:calc(160/540);
-      margin-right: 30px;
+      grid-column: 1/4;
     }
     &__group:nth-child(6) {
-      flex-grow:calc(355/540);
+      grid-column: 5/12;
     }
   }
 }
