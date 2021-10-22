@@ -54,7 +54,26 @@
 
     <section class="main">
       <section class="main__container">
-        <section class="stepper main__stepper">
+        <section class="stepper main__stepper pageOne isOpen ">
+          <p class="stepper__title">結帳</p>
+          <div class="stepper__container">
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--active">1</span>
+              <span class="stepper__des stepper__des--active">寄送地址</span>
+            </div>
+            <span class="stepper__bar stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--disable">2</span>
+              <span class="stepper__des stepper__des--disable">運送方式</span>
+            </div>
+            <span class="stepper__bar stepper__bar--disable"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--disable">3</span>
+              <span class="stepper__des stepper__des--disable">付款資訊</span>
+            </div>
+          </div>
+        </section>
+        <section class="stepper main__stepper pageTwo">
           <p class="stepper__title">結帳</p>
           <div class="stepper__container">
             <div class="stepper__item">
@@ -172,7 +191,7 @@
           </div>
         </section>
         <section class="main__subNav">
-          <button class="btn main__btn btn--active">下一步 &#8594;</button>
+          <button class="btn main__btn btn--active" onClick="nextPage()" id="nextBtn">下一步 &#8594;</button>
         </section>
       </section>
     </section>
@@ -233,6 +252,6 @@
         </div>
       </section>
     </section>
-    <script src="src/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
