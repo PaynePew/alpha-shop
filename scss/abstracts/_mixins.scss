@@ -17,7 +17,7 @@
 }
 
 @function rhythm($size) {
-  @return ceil($size * $paddingLevel / $baseLineHeight) * $baseLineSize;
+  @return ($size * $paddingLevel / $baseLineHeight) * $baseLineSize;
 }
 
 @function line($count: 1, $baseLineHeight: 5px) {
