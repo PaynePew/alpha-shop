@@ -47,8 +47,8 @@
   &__count {
     @extend %flex;
     align-items: center;
-
-    @include font(0.5, 1);
+    font-family: $number-font-family;
+    @include font(0.5, 3);
   }
   &__number {
     width: 54px;
@@ -58,21 +58,27 @@
   }
   &__down {
     @extend %flex;
-    background: rgba(240, 240, 245, 1);
     justify-content: center;
     align-items: center;
     width: 26px;
     height: 26px;
     border-radius: 50%;
+    @include themeGen($themes){
+      background-color: getThemeVal(icon-count-background);
+      color:getThemeVal(icon-count-font);
+    }
   }
   &__up {
     @extend %flex;
-    background: rgba(240, 240, 245, 1);
     justify-content: center;
     align-items: center;
     width: 26px;
     height: 26px;
     border-radius: 50%;
+    @include themeGen($themes){
+      background-color: getThemeVal(icon-count-background);
+      color:getThemeVal(icon-count-font);
+    }
   }
   &__footer {
     @extend %flex;
@@ -92,7 +98,6 @@
   @include desktop{
     padding:24px;
     
-
     &__title{
       display:block;
       @include font(1.5,3);
@@ -103,6 +108,9 @@
     }
     &__des {
       align-items: flex-start;
+    }
+    &__footer{
+      padding: 16px 0 32px 0;
     }
   }
 }
