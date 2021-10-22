@@ -54,7 +54,9 @@
 
     <section class="main">
       <section class="main__container">
-        <section class="stepper main__stepper pageOne isOpen ">
+        <!-- stepper start here -->
+        <!-- pageOne -->
+        <section class="stepper main__stepper pageOne isOpen">
           <p class="stepper__title">結帳</p>
           <div class="stepper__container">
             <div class="stepper__item">
@@ -73,25 +75,53 @@
             </div>
           </div>
         </section>
+        <!-- pageTwo -->
         <section class="stepper main__stepper pageTwo">
           <p class="stepper__title">結帳</p>
           <div class="stepper__container">
             <div class="stepper__item">
-              <span class="stepper__number stepper__number--active">1</span>
-              <span class="stepper__des stepper__des--active">寄送地址</span>
+              <span class="stepper__number stepper__number--done"
+                >&#10003;</span
+              >
+              <span class="stepper__des stepper__des--done">寄送地址</span>
             </div>
             <span class="stepper__bar stepper__bar--active"></span>
             <div class="stepper__item">
-              <span class="stepper__number stepper__number--disable">2</span>
-              <span class="stepper__des stepper__des--disable">運送方式</span>
+              <span class="stepper__number stepper__number--active">2</span>
+              <span class="stepper__des stepper__des--active">運送方式</span>
             </div>
-            <span class="stepper__bar stepper__bar--disable"></span>
+            <span class="stepper__bar stepper__bar--active"></span>
             <div class="stepper__item">
               <span class="stepper__number stepper__number--disable">3</span>
               <span class="stepper__des stepper__des--disable">付款資訊</span>
             </div>
           </div>
         </section>
+        <!-- pageThree -->
+        <section class="stepper main__stepper pageThree">
+          <p class="stepper__title">結帳</p>
+          <div class="stepper__container">
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--done"
+                >&#10003;</span
+              >
+              <span class="stepper__des stepper__des--done">寄送地址</span>
+            </div>
+            <span class="stepper__bar stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--done"
+                >&#10003;</span
+              >
+              <span class="stepper__des stepper__des--done">運送方式</span>
+            </div>
+            <span class="stepper__bar stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--active">3</span>
+              <span class="stepper__des stepper__des--active">付款資訊</span>
+            </div>
+          </div>
+        </section>
+
         <section class="main__content">
           <form action="" class="address">
             <p class="address__title">寄送地址</p>
@@ -191,7 +221,13 @@
           </div>
         </section>
         <section class="main__subNav">
-          <button class="btn main__btn btn--active" onClick="nextPage()" id="nextBtn">下一步 &#8594;</button>
+          <button
+            class="btn main__btn btn--active"
+            onClick="nextPage()"
+            id="nextBtn"
+          >
+            下一步 &#8594;
+          </button>
         </section>
       </section>
     </section>

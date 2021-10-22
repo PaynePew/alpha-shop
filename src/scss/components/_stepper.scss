@@ -7,6 +7,8 @@
   &__container {
     @extend %flex;
     justify-content: space-between;
+    margin:32px 0;
+
   }
   &__item {
     @extend %flex;
@@ -71,7 +73,7 @@
     &--disable {
       @include themeGen($themes) {
         border: 2px solid getThemeVal(icon-bar-disable);
-        color: getThemeVal(icon-bar-disable);
+        background-color: getThemeVal(icon-bar-disable);
       }
     }
   }
