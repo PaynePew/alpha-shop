@@ -1,0 +1,25 @@
+//Menu
+
+.menu {
+  &__item {
+    @include themeGen($themes) {
+      color: getThemeVal(footer-s);
+    }
+    margin-bottom: 8px;
+  }
+  &__title {
+    @include font(3, 3);
+  }
+  &__list {
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+    padding-left: 4px;
+    @include font(1);
+  }
+  &__social {
+    height: 20px;
+    margin-right: 27px;
+    margin-top: 3px;
+  }
+}

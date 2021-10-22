@@ -1,0 +1,7 @@
+//RWD-mobile first
+@mixin desktop {
+  @media (min-width: 375px) {
+    max-width:1110px;
+    @content;
+  }
+}

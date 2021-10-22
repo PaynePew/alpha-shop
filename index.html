@@ -7,9 +7,19 @@
     <title>Alpha Shop</title>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <body>
+  <body class="theme-light">
     <section class="header">
-      <nav class="navbar navbar--light">
+      <nav class="navbar">
+        <div class="logo navbar__logo">
+          <a href="#" class="logo__link"
+            ><img class="logo__img" src="./img/Logo@2x.png" alt="alpha shop"
+          /></a>
+        </div>
+        <img
+          class="navbar__hamburger"
+          src="/img/bx_bx-menu-alt-left@2x.png"
+          alt=""
+        />
         <div class="navbar__collapse">
           <ul class="navbar__list">
             <li class="navbar__item">
@@ -29,99 +39,200 @@
             </li>
           </ul>
         </div>
-        <div class="logo navbar__logo">
-          <a href="#" class="logo__link"
-            ><img
-              class="logo__img"
-              src="./img/Logo@2x.png"
-              alt="alpha shop"
-          /></a>
-        </div>
         <div class="tool navbar__tool">
-          <a class="tool__link" href=""
-            ><img class="tool__icon" src="./img/icon-search@2x.png" alt=""
-          /></a>
-          <a class="tool__link" href=""
-            ><img class="tool__icon" src="./img/icon-cart@2x.png" alt=""
-          /></a>
-          <a class="tool__link" href=""
-            ><img class="tool__icon" src="./img/icon-dark@2x.png" alt=""
-          /></a>
+          <img class="tool__icon" src="./img/icon-search@2x.png" alt="" />
+          <img class="tool__icon" src="./img/icon-cart@2x.png" alt="" />
+          <img
+            class="tool__icon"
+            onClick="toggleTheme()"
+            src="./img/icon-dark@2x.png"
+            alt=""
+          />
         </div>
       </nav>
     </section>
 
-    <section class="progress">
-      <p class="progress__title">結帳</p>
-      <div class="progress__bar"></div>
-    </section>
     <section class="main">
-      <section class="main__content">
-        <form action="" class="address">
-          <p class="address__title">寄送地址</p>
-          <div class="address__group">
-            <label for="" class="i">稱謂</label>
-            <input type="text" />
+      <section class="main__container">
+        <section class="stepper main__stepper">
+          <p class="stepper__title">結帳</p>
+          <div class="stepper__container">
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--active">1</span>
+              <span class="stepper__des stepper__des--active">寄送地址</span>
+            </div>
+            <span class="stepper__bar stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--disable">2</span>
+              <span class="stepper__des stepper__des--disable">運送方式</span>
+            </div>
+            <span class="stepper__bar stepper__bar--disable"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--disable">3</span>
+              <span class="stepper__des stepper__des--disable">付款資訊</span>
+            </div>
           </div>
-          <button class="btn address__btn btn--active">下一步 &#8594;</button>
-        </form>
+        </section>
+        <section class="main__content">
+          <form action="" class="address">
+            <p class="address__title">寄送地址</p>
+            <div class="address__content">
+              <div class="address__group">
+                <label class="address__label" for="">稱謂</label>
+                <select name="" class="address__input">
+                  <option value="先生">先生</option>
+                </select>
+              </div>
+              <div class="address__group">
+                <label for="" class="address__label">姓名</label>
+                <input
+                  type="text"
+                  placeholder="請輸入姓名"
+                  class="address__input"
+                />
+              </div>
+              <div class="address__group">
+                <label for="" class="address__label">電話</label>
+                <input
+                  type="text"
+                  placeholder="請輸入行動電話"
+                  class="address__input"
+                />
+              </div>
+              <div class="address__group">
+                <label for="" class="address__label">Email</label>
+                <input
+                  type="text"
+                  placeholder="請輸入電子郵件"
+                  class="address__input"
+                />
+              </div>
+              <div class="address__group">
+                <label for="" class="address__label">縣市</label>
+                <input
+                  type="text"
+                  placeholder="請輸入縣市"
+                  class="address__input"
+                />
+              </div>
+              <div class="address__group">
+                <label for="" class="address__label">地址</label>
+                <input
+                  type="text"
+                  placeholder="請輸入地址"
+                  class="address__input"
+                />
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class="main__sub">
+          <div class="cart">
+            <p class="cart__title">購物籃</p>
+            <div class="cart__item">
+              <div class="cart__imgFrame">
+                <img src="/img/item-1@2x.png" alt="" class="cart__img" />
+              </div>
+              <div class="cart__content">
+                <div class="cart__des">
+                  <p class="cart__name">破壞補丁修身牛仔褲</p>
+                  <div class="cart__count">
+                    <span class="cart__down">&#8722;</span>
+                    <span class="cart__number">1</span>
+                    <span class="cart__up">&#43;</span>
+                  </div>
+                </div>
+                <div class="cart__price">$3,999</div>
+              </div>
+            </div>
+            <div class="cart__item">
+              <div class="cart__imgFrame">
+                <img src="/img/item-2@2x.png" alt="" class="cart__img" />
+              </div>
+              <div class="cart__content">
+                <div class="cart__des">
+                  <p class="cart__name">刷色直筒牛仔褲</p>
+                  <div class="cart__count">
+                    <span class="cart__down">&#8722;</span>
+                    <span class="cart__number">1</span>
+                    <span class="cart__up">&#43;</span>
+                  </div>
+                </div>
+                <div class="cart__price">$1,299</div>
+              </div>
+            </div>
+            <div class="cart__footer">
+              <span class="cart__footerName">運費</span>
+              <span class="cart__price">免運</span>
+            </div>
+            <div class="cart__footer">
+              <span class="cart__footerName">小計</span>
+              <span class="cart__price">$5,298</span>
+            </div>
+          </div>
+        </section>
+        <section class="main__subNav">
+          <button class="btn main__btn btn--active">下一步 &#8594;</button>
+        </section>
       </section>
-      <section class="main__sub">
-        <div class="cart">
-          <p class="cart__title">購物籃</p>
-          <ul class="cart__list">
-            <li class="cart__item"></li>
-            <li class="cart__item"></li>
+    </section>
+    <section class="footer">
+      <section class="footer__container">
+        <div class="logo footer__logo">
+          <a href="#" class="logo__link"
+            ><img class="logo__img" src="./img/Logo@2x.png" alt="alpha shop"
+          /></a>
+        </div>
+        <div class="menu footer__menu">
+          <p class="menu__title">客戶服務</p>
+          <ul class="menu__list">
+            <li class="menu__item">運送說明</li>
+            <li class="menu__item">退換貨相關</li>
+            <li class="menu__item">付款資訊</li>
+            <li class="menu__item">FAQ</li>
+          </ul>
+        </div>
+        <div class="menu footer__menu">
+          <p class="menu__title">關於我們</p>
+          <ul class="menu__list">
+            <li class="menu__item">品牌故事</li>
+            <li class="menu__item">媒體連繫</li>
+            <li class="menu__item">Press kit</li>
+          </ul>
+        </div>
+        <div class="menu footer__menu">
+          <p class="menu__title">資訊</p>
+          <ul class="menu__list">
+            <li class="menu__item">隱私權政策</li>
+            <li class="menu__item">Cookie</li>
+            <li class="menu__item">GDPR</li>
+          </ul>
+        </div>
+        <div class="menu footer__menu">
+          <p class="menu__title">追蹤ALPHA SHOP</p>
+          <ul class="menu__list">
+            <li class="menu__item">+886 02123-45678</li>
+            <li class="menu__item">
+              <img
+                class="menu__social"
+                src="/img/Icon-facebook@2x.png"
+                alt=""
+              />
+              <img
+                class="menu__social"
+                src="/img/Icon-instagram@2x.png"
+                alt=""
+              />
+              <img
+                class="menu__social"
+                src="/img/Icon-whatsapp@2x.png"
+                alt=""
+              />
+            </li>
           </ul>
         </div>
       </section>
     </section>
-    <section class="footer">
-      <div class="logo footer__logo">
-        <a href="#" class="logo__link"
-          ><img
-            class="logo__img"
-            src="./img/Logo@2x.png"
-            alt="alpha shop"
-        /></a>
-      </div>
-      <div class="menu footer__menu">
-        <p class="menu__title">客戶服務</p>
-        <ul class="menu__list">
-          <li class="menu__item">運送說明</li>
-          <li class="menu__item">退換貨相關</li>
-          <li class="menu__item">付款資訊</li>
-          <li class="menu__item">FAQ</li>
-        </ul>
-      </div>
-      <div class="menu footer__menu">
-        <p class="menu__title">關於我們</p>
-        <ul class="menu__list">
-          <li class="menu__item">品牌故事</li>
-          <li class="menu__item">媒體連繫</li>
-          <li class="menu__item">Press kit</li>
-          <li class="menu__item"></li>
-        </ul>
-      </div>
-      <div class="menu footer__menu">
-        <p class="menu__title">資訊</p>
-        <ul class="menu__list">
-          <li class="menu__item">隱私權政策</li>
-          <li class="menu__item">Cookie</li>
-          <li class="menu__item">GDPR</li>
-        </ul>
-      </div>
-      <div class="menu footer__menu">
-        <p class="menu__title">追蹤ALPHA SHOP</p>
-        <ul class="menu__list">
-          <li class="menu__item">+886 02123-45678</li>
-          <li class="menu__item">
-            <img class="menu__social" src="/img/Icon-facebook@2x.png" alt="">
-            <img class="menu__social" src="/img/Icon-instagram@2x.png" alt="">
-            <img class="menu__social" src="/img/Icon-whatsapp@2x.png" alt="">
-          </li>
-        </ul>
-      </div>
-    </section>
+    <script src="src/index.js"></script>
   </body>
 </html>

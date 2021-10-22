@@ -1,0 +1,12 @@
+.btn {
+  @include themeGen() {
+    background-color: getThemeVal(btn-p);
+    color: getThemeVal(btn-s);
+  }
+  display: block;
+  width: 174px;
+  height: 46px;
+  border-radius: 8px;
+  border:none;
+  font-family: $button-font-family;
+}
