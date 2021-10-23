@@ -20,7 +20,7 @@
   }
   &--pre {
     @include themeGen() {
-      color: getThemeVal(btn-s);
+      color: getThemeVal(secondary);
     }
     background: none;
     width:auto;
