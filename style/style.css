@@ -461,7 +461,7 @@ template {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-.btn__group--scale, .btn__group--between, .navbar, .navbar__item, .stepper__container, .stepper__item, .stepper__number, .address, .address__group, .cart, .cart__item, .cart__content, .cart__des, .cart__count, .cart__down, .cart__up, .cart__footer, .cart__total, .radioForm__container, .radioForm__content, .radioForm__des, .normalForm, .normalForm__group, .normalForm__combine--1-1, .main {
+.btn__group--scale, .btn__group--between, .navbar, .navbar__item, .stepper__container, .stepper__item, .stepper__number, .address, .address__group, .cart, .cart__item, .cart__content, .cart__des, .cart__count, .cart__down, .cart__up, .cart__footer, .cart__total, .radioForm__container, .radioForm__content, .radioForm__des, .normalForm, .normalForm__group, .normalForm__combine--1-1, .normalForm__combine--1-2, .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1426,6 +1426,40 @@ option {
   }
 }
 
+@media (min-width: 375px) {
+  .normalForm__combine--d-1-1 {
+    max-width: 1110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .normalForm__combine--d-1-1 .normalForm__group:nth-child(2) {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 375px) {
+  .normalForm__combine--d-1-2 {
+    max-width: 1110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .normalForm__combine--d-1-2 .normalForm__group:nth-child(1) {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .normalForm__combine--d-1-2 .normalForm__group:nth-child(2) {
+    margin-left: 30px;
+  }
+}
+
 .normalForm__combine--1-1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1433,6 +1467,21 @@ option {
 }
 
 .normalForm__combine--1-1 .normalForm__group:nth-child(2) {
+  margin-left: 30px;
+}
+
+.normalForm__combine--1-2 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.normalForm__combine--1-2 .normalForm__group:nth-child(1) {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.normalForm__combine--1-2 .normalForm__group:nth-child(2) {
   margin-left: 30px;
 }
 
