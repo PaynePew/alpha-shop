@@ -37,6 +37,9 @@
   }
   &__text {
     @include font(0);
+    @include themeGen($themes){
+      color: getThemeVal(icon-radio-font);
+    }
   }
   &__price {
     @include font(0,0);

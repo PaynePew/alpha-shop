@@ -46,6 +46,7 @@ $themes: (
     "icon-radio-normal":$grey-footer,
     "icon-radio-focused":$white,
     "icon-radio-border":none,
+    "icon-radio-font": $grey-bar,
     "border":$grey-border,
   ),
   "light": (
@@ -68,6 +69,7 @@ $themes: (
     "icon-radio-normal":$white,
     "icon-radio-focused":$white,
     "icon-radio-border":$black-icon-border,
+    "icon-radio-font": $black,
     "border":$white-icon-disable,
   ),
 );
