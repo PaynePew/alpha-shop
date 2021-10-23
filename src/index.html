@@ -201,7 +201,7 @@
             </div>
           </form>
           <!-- pageTwo -->
-          <div class="radioForm pageTwo ">
+          <div class="radioForm pageTwo">
             <div class="radioForm__item">
               <label for="customRadio-normal" class="radioForm__container">
                 <input
@@ -286,13 +286,45 @@
           </div>
         </section>
         <section class="main__subNav">
-          <button
-            class="btn main__btn btn--active"
-            onClick="nextPage()"
-            id="nextBtn"
-          >
-            下一步 &#8594;
-          </button>
+          <!-- pageOne -->
+          <div class="pageOne isOpen">
+            <button
+              class="btn main__btn btn--next"
+              onClick="nextPage()"
+            >
+              下一步 &#8594;
+            </button>
+          </div>
+          <!-- pageTwo -->
+          <div class="pageTwo">
+            <button
+              class="btn main__btn btn--pre"
+              onClick="prePage()"
+            >
+              &#8592; 上一步
+            </button>
+            <button
+              class="btn main__btn btn--next"
+              onClick="nextPage()"
+            >
+              下一步 &#8594;
+            </button>
+          </div>
+          <!-- pageThree -->
+          <div class="pageThree">
+            <button
+              class="btn main__btn btn--pre"
+              onClick="prePage()"
+            >
+              &#8592; 上一步
+            </button>
+            <button
+              class="btn main__btn btn--next"
+              onClick="nextPage()"
+            >
+              確認下單
+            </button>
+          </div>
         </section>
       </section>
     </section>
