@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
 
-  &__top{
+  &__top {
     display: flex;
     justify-content: flex-start;
   }
@@ -17,20 +17,19 @@
     @include font(3, 3);
   }
   &__container {
-    width:100%;
-    flex-grow: 1;
-    margin:15px;
-    margin-bottom: 25px;
-  }
-
-  &__btn {
     width: 100%;
+    flex-grow: 1;
+    margin: 15px;
+    margin-bottom: 25px;
   }
 
   &__subNav {
     margin-top: 32px;
     padding-top: 24px;
-    border-top: 1px solid #e6e6eb;
+    @include themeGen($themes){
+      border-top: 1px solid getThemeVal(border);
+    }
+    
   }
 }
 .main__container {
@@ -40,7 +39,7 @@
     grid-template-columns: 1fr auto 1fr;
 
     .main {
-      &__top{
+      &__top {
         grid-column: 1/4;
         grid-row: 1/2;
       }
@@ -55,21 +54,12 @@
       &__sub {
         grid-column: 3/4;
         grid-row: 2/5;
-        margin-top:38px;
+        margin-top: 38px;
         margin-left: 114px;
       }
       &__subNav {
         grid-column: 1/2;
         grid-row: 4/5;
-        display: flex;
-        
-        justify-content: flex-end;
-        
-        
-      }
-
-      &__btn {
-        width: 174px;
       }
     }
   }

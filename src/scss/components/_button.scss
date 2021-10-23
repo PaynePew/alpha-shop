@@ -3,17 +3,37 @@
   width: 174px;
   height: 46px;
   border-radius: 8px;
-  border:none;
+  border: none;
   font-family: $button-font-family;
 
-  &--next{
+  &--scale {
+    width: 100%;
+    @include desktop {
+      width: 174px;
+    }
+  }
+  &--next {
     @include themeGen() {
       background-color: getThemeVal(btn-p);
       color: getThemeVal(btn-s);
     }
-
-  &--pre{
-    
   }
+  &--pre {
+    @include themeGen() {
+      color: getThemeVal(btn-s);
+    }
+    background: none;
+    width:auto;
+  }
+
+  &__group{
+    &--scale{
+      @extend %flex;
+      justify-content: flex-end;
+    }
+    &--between{
+      @extend %flex;
+      justify-content: space-between;
+    }
   }
 }

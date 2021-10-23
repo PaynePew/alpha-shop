@@ -241,7 +241,7 @@
             </div>
           </div>
           <!-- pageThree -->
-          <form action="" class="normalForm pageThree isOpen">
+          <form action="" class="normalForm pageThree">
             <p class="normalForm__title">付款資訊</p>
             <div class="normalForm__content">
               <div class="normalForm__group">
@@ -328,28 +328,34 @@
         </section>
         <section class="main__subNav">
           <!-- pageOne -->
-          <div class="pageOne isOpen">
-            <button class="btn main__btn btn--next" onClick="nextPage()">
-              下一步 &#8594;
-            </button>
+          <div class="pageOne">
+            <div class="btn__group--scale">
+              <button class="btn btn--scale btn--next" onClick="nextPage()">
+                下一步 &#8594;
+              </button>
+            </div>
           </div>
           <!-- pageTwo -->
-          <div class="pageTwo">
-            <button class="btn main__btn btn--pre" onClick="prePage()">
-              &#8592; 上一步
-            </button>
-            <button class="btn main__btn btn--next" onClick="nextPage()">
-              下一步 &#8594;
-            </button>
+          <div class="pageTwo isOpen">
+            <div class="btn__group--between">
+              <button class="btn btn--pre" onClick="prePage()">
+                &#8592; 上一步
+              </button>
+              <button class="btn btn--next" onClick="nextPage()">
+                下一步 &#8594;
+              </button>
+            </div>
           </div>
           <!-- pageThree -->
           <div class="pageThree">
-            <button class="btn main__btn btn--pre" onClick="prePage()">
-              &#8592; 上一步
-            </button>
-            <button class="btn main__btn btn--next" onClick="nextPage()">
-              確認下單
-            </button>
+            <div class="btn__group--between">
+              <button class="btn btn--pre" onClick="prePage()">
+                &#8592; 上一步
+              </button>
+              <button class="btn btn--next" onClick="nextPage()">
+                確認下單
+              </button>
+            </div>
           </div>
         </section>
       </section>
