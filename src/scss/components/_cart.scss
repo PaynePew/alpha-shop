@@ -4,7 +4,11 @@
   @extend %flex;
   flex-direction: column;
   padding:16px;
-  border: 1px solid #f0f0f5;
+  
+  @include themeGen($themes){
+    border: 1px solid getThemeVal(border);
+    background: getThemeVal(cart-background);
+  }
   box-sizing: border-box;
   border-radius: 8px;
 
@@ -83,7 +87,9 @@
   &__footer {
     @extend %flex;
     justify-content: space-between;
-    border-top: 1px solid #F0F0F5;
+    @include themeGen($themes){
+      border-top: 1px solid getThemeVal(border);
+    }
     padding:16px 0;
   }
   &__total{
