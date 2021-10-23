@@ -479,10 +479,10 @@ template {
           transform: translateX(-1000%);
   position: absolute;
   visibility: hidden;
-  -webkit-transition: opacity 0.5s , -webkit-transform 0.5s;
-  transition: opacity 0.5s , -webkit-transform 0.5s;
-  transition: transform 0.5s , opacity 0.5s;
-  transition: transform 0.5s , opacity 0.5s , -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
 
 .isOpen {
@@ -1558,7 +1558,6 @@ option {
 @media (min-width: 375px) {
   .main__container {
     max-width: 1110px;
-    overflow-x: visible;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr auto 1fr;
@@ -1587,6 +1586,7 @@ option {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+    height: 325px;
   }
   .main__container .main__sub {
     -ms-grid-column: 3;
