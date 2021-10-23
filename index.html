@@ -240,6 +240,46 @@
               </label>
             </div>
           </div>
+          <!-- pageThree -->
+          <form action="" class="normalForm pageThree isOpen">
+            <p class="normalForm__title">付款資訊</p>
+            <div class="normalForm__content">
+              <div class="normalForm__group">
+                <label for="" class="normalForm__label">持卡人姓名</label>
+                <input
+                  type="text"
+                  placeholder="John Doe"
+                  class="normalForm__input"
+                />
+              </div>
+              <div class="normalForm__group">
+                <label for="" class="normalForm__label">卡號</label>
+                <input
+                  type="text"
+                  placeholder="1111 2222 3333 4444"
+                  class="normalForm__input"
+                />
+              </div>
+              <div class="normalForm__combine--1-1">
+                <div class="normalForm__group">
+                  <label for="" class="normalForm__label">有效期限</label>
+                  <input
+                    type="text"
+                    placeholder="MM/YY"
+                    class="normalForm__input"
+                  />
+                </div>
+                <div class="normalForm__group">
+                  <label for="" class="normalForm__label">CVC/CCV</label>
+                  <input
+                    type="text"
+                    placeholder="123"
+                    class="normalForm__input"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
         </section>
         <section class="main__sub">
           <div class="cart">
@@ -289,40 +329,24 @@
         <section class="main__subNav">
           <!-- pageOne -->
           <div class="pageOne isOpen">
-            <button
-              class="btn main__btn btn--next"
-              onClick="nextPage()"
-            >
+            <button class="btn main__btn btn--next" onClick="nextPage()">
               下一步 &#8594;
             </button>
           </div>
           <!-- pageTwo -->
           <div class="pageTwo">
-            <button
-              class="btn main__btn btn--pre"
-              onClick="prePage()"
-            >
+            <button class="btn main__btn btn--pre" onClick="prePage()">
               &#8592; 上一步
             </button>
-            <button
-              class="btn main__btn btn--next"
-              onClick="nextPage()"
-            >
+            <button class="btn main__btn btn--next" onClick="nextPage()">
               下一步 &#8594;
             </button>
           </div>
           <!-- pageThree -->
           <div class="pageThree">
-            <button
-              class="btn main__btn btn--pre"
-              onClick="prePage()"
-            >
+            <button class="btn main__btn btn--pre" onClick="prePage()">
               &#8592; 上一步
             </button>
-            <button
-              class="btn main__btn btn--next"
-              onClick="nextPage()"
-            >
             <button class="btn main__btn btn--next" onClick="nextPage()">
               確認下單
             </button>

@@ -461,7 +461,7 @@ template {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-.navbar, .navbar__item, .stepper__container, .stepper__item, .stepper__number, .address, .address__group, .cart, .cart__item, .cart__content, .cart__des, .cart__count, .cart__down, .cart__up, .cart__footer, .cart__total, .radioForm__container, .radioForm__content, .radioForm__des, .main {
+.navbar, .navbar__item, .stepper__container, .stepper__item, .stepper__number, .address, .address__group, .cart, .cart__item, .cart__content, .cart__des, .cart__count, .cart__down, .cart__up, .cart__footer, .cart__total, .radioForm__container, .radioForm__content, .radioForm__des, .normalForm, .normalForm__group, .normalForm__combine--1-1, .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1165,27 +1165,50 @@ option {
 }
 
 .radioForm__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.theme-dark .radioForm__title {
+  color: white;
+}
+
+.theme-light .radioForm__title {
+  color: black;
+}
+
+.radioForm__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   margin-bottom: 8px;
 }
 
-.radioForm__text {
+.radioForm__text--bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 4px;
+}
+
+.radioForm__text--small {
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
 }
 
-.theme-dark .radioForm__text {
+.theme-dark .radioForm__text--small {
   color: rgba(240, 240, 245, 0.4);
 }
 
-.theme-light .radioForm__text {
+.theme-light .radioForm__text--small {
   color: black;
 }
 
-.radioForm__price {
+.radioForm__text--price {
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -1270,6 +1293,99 @@ option {
   right: 0;
   top: 0;
   bottom: 0;
+}
+
+.normalForm {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.normalForm__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 0px;
+}
+
+.theme-dark .normalForm__title {
+  color: white;
+}
+
+.theme-light .normalForm__title {
+  color: black;
+}
+
+.normalForm__content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-bottom: 24px;
+}
+
+.normalForm__group {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.normalForm__label {
+  margin-bottom: 8px;
+}
+
+.theme-dark .normalForm__label {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.theme-light .normalForm__label {
+  color: gray;
+}
+
+.normalForm__input {
+  padding: 12px 18px;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  height: 40px;
+  background: none;
+}
+
+.theme-dark .normalForm__input {
+  color: white;
+}
+
+.theme-light .normalForm__input {
+  color: black;
+}
+
+@media (min-width: 375px) {
+  .normalForm {
+    max-width: 1110px;
+    max-width: 540px;
+  }
+  .normalForm__group {
+    max-width: 350px;
+  }
+}
+
+.normalForm__combine--1-1 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.normalForm__combine--1-1 .normalForm__group:nth-child(2) {
+  margin-left: 30px;
+}
+
+option {
+  color: black;
 }
 
 .theme-dark .header {
