@@ -123,7 +123,9 @@
         </section>
 
         <section class="main__content">
-          <form action="" class="address">
+          <!-- stepper start here -->
+          <!-- pageOne -->
+          <form action="" class="address pageOne isOpen">
             <p class="address__title">寄送地址</p>
             <div class="address__content">
               <div class="address__group">
@@ -158,11 +160,34 @@
               </div>
               <div class="address__group">
                 <label for="" class="address__label">縣市</label>
-                <input
+                <select
                   type="text"
-                  placeholder="請輸入縣市"
+                  placeholder="請選擇縣市"
                   class="address__input"
-                />
+                >
+                  <option value="">台北市</option>
+                  <option value="">基隆市</option>
+                  <option value="">新北市</option>
+                  <option value="">桃園市</option>
+                  <option value="">新竹市</option>
+                  <option value="">新竹縣</option>
+                  <option value="">苗栗市</option>
+                  <option value="">台中縣</option>
+                  <option value="">彰化縣</option>
+                  <option value="">南投縣</option>
+                  <option value="">雲林縣</option>
+                  <option value="">嘉義市</option>
+                  <option value="">嘉義縣</option>
+                  <option value="">台南市</option>
+                  <option value="">高雄市</option>
+                  <option value="">屏東縣</option>
+                  <option value="">台東縣</option>
+                  <option value="">花蓮縣</option>
+                  <option value="">宜蘭縣</option>
+                  <option value="">澎湖縣</option>
+                  <option value="">金門縣</option>
+                  <option value="">連江縣</option>
+                </select>
               </div>
               <div class="address__group">
                 <label for="" class="address__label">地址</label>
@@ -174,6 +199,45 @@
               </div>
             </div>
           </form>
+          <!-- pageTwo -->
+          <div class="radioForm pageTwo ">
+            <div class="radioForm__item">
+              <label for="customRadio-normal" class="radioForm__container">
+                <input
+                  id="customRadio-normal"
+                  type="radio"
+                  class="radioForm__input"
+                />
+                <span class="radioForm__radio"></span>
+                <div class="radioForm__content">
+                  <div class="radioForm__des">
+                    <span class="radioForm__title">標準運送</span>
+                    <span class="radioForm__text">約3~7個工作天</span>
+                  </div>
+                  <span class="radioForm__price">免費</span>
+                </div>
+                <div class="radioForm__focusBorder"></div>
+              </label>
+            </div>
+            <div class="radioForm__item">
+              <label for="customRadio-DHL" class="radioForm__container">
+                <input
+                  id="customRadio-DHL"
+                  type="radio"
+                  class="radioForm__input"
+                />
+                <span class="radioForm__radio"></span>
+                <div class="radioForm__content">
+                  <div class="radioForm__des">
+                    <span class="radioForm__title">DHL貨運</span>
+                    <span class="radioForm__text">48小時內送達</span>
+                  </div>
+                  <span class="radioForm__price">$500</span>
+                </div>
+                <div class="radioForm__focusBorder"></div>
+              </label>
+            </div>
+          </div>
         </section>
         <section class="main__sub">
           <div class="cart">
