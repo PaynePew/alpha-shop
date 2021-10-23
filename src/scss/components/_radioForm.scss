@@ -15,14 +15,16 @@
     border: 1px solid #f0f0f5;
     border-radius: 4px;
     padding: 11px 20px;
+    @include themeGen($themes){
+      border-color: getThemeVal(border);
+    }
+    
   }
   &__content {
     width:100%;
     @extend %flex;
     justify-content: space-between;
-
-
-
+    font-family: $button-font-family;
   }
   &__des {
     @extend %flex;
@@ -30,16 +32,13 @@
   }
 
   &__title {
-    font-family: $button-font-family;
     @include font(0.5);
     margin-bottom:8px;
   }
   &__text {
-    font-family: $button-font-family;
     @include font(0);
   }
   &__price {
-    font-family: $button-font-family;
     @include font(0,0);
   }
 
@@ -51,7 +50,9 @@
       transition: transform 0.2s ease;
     }
     &:checked ~ .radioForm__radio {
-      background: black;
+      @include themeGen($themes){
+        background-color: getThemeVal(icon-radio-background);
+      }
       transition: transform 0.2s ease;
     }
     &:checked ~ .radioForm__focusBorder {
@@ -63,13 +64,17 @@
   &__radio {
     width: 1.25em;
     height: 1.25em;
-    border: 1px solid currentColor;
+    
     border-radius: 50%;
     margin-right: 20px;
     padding: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include themeGen($themes){
+      background-color: getThemeVal(icon-radio-normal);
+      border: 1px solid getThemeVal(icon-radio-border);
+    }
 
     &::after {
       content: "";
