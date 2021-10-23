@@ -202,6 +202,7 @@
           </form>
           <!-- pageTwo -->
           <div class="radioForm pageTwo">
+            <p class="radioForm__title">運送方式</p>
             <div class="radioForm__item">
               <label for="customRadio-normal" class="radioForm__container">
                 <input
@@ -212,10 +213,10 @@
                 <span class="radioForm__radio"></span>
                 <div class="radioForm__content">
                   <div class="radioForm__des">
-                    <span class="radioForm__title">標準運送</span>
-                    <span class="radioForm__text">約3~7個工作天</span>
+                    <span class="radioForm__text">標準運送</span>
+                    <span class="radioForm__text--small">約3~7個工作天</span>
                   </div>
-                  <span class="radioForm__price">免費</span>
+                  <span class="radioForm__text--price">免費</span>
                 </div>
                 <div class="radioForm__focusBorder"></div>
               </label>
@@ -230,10 +231,10 @@
                 <span class="radioForm__radio"></span>
                 <div class="radioForm__content">
                   <div class="radioForm__des">
-                    <span class="radioForm__title">DHL貨運</span>
-                    <span class="radioForm__text">48小時內送達</span>
+                    <span class="radioForm__text--bold">DHL貨運</span>
+                    <span class="radioForm__text--small">48小時內送達</span>
                   </div>
-                  <span class="radioForm__price">$500</span>
+                  <span class="radioForm__text--price">$500</span>
                 </div>
                 <div class="radioForm__focusBorder"></div>
               </label>
@@ -322,6 +323,7 @@
               class="btn main__btn btn--next"
               onClick="nextPage()"
             >
+            <button class="btn main__btn btn--next" onClick="nextPage()">
               確認下單
             </button>
           </div>
