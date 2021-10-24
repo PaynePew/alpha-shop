@@ -53,6 +53,7 @@
     align-items: center;
     font-family: $number-font-family;
     @include font(0.5, 3);
+    
   }
   &__number {
     width: 54px;
@@ -67,6 +68,7 @@
     width: 26px;
     height: 26px;
     border-radius: 50%;
+    cursor: pointer;
     @include themeGen($themes){
       background-color: getThemeVal(icon-count-background);
       color:getThemeVal(icon-count-font);
@@ -79,6 +81,7 @@
     width: 26px;
     height: 26px;
     border-radius: 50%;
+    cursor: pointer;
     @include themeGen($themes){
       background-color: getThemeVal(icon-count-background);
       color:getThemeVal(icon-count-font);
