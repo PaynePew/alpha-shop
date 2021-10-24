@@ -33,6 +33,7 @@
   }
 }
 .main__container {
+  max-width:375px;
   @include desktop {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
