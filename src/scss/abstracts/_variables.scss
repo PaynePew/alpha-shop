@@ -8,40 +8,71 @@ $sizeLevel: 4px;
 $weightLevel: 100;
 $paddingLevel: 1;
 
+$white:rgba(255, 255, 255, 1);
+$whiteL4:rgba(255, 255, 255, 0.4);
+$whiteL6:rgba(255, 255, 255, 0.6);
+$white-footer:rgba(246, 247, 248, 1);
+$white-icon-disable:rgba(240, 240, 245, 1);
+$black:rgba(0, 0, 0, 1);
+$black-primary:rgba(18, 18, 18, 1);
+$black-icon:rgba(42, 42, 42, 1);
+$black-icon-border:rgba(34, 34, 34, 1);
+$grey-footer:rgba(51, 51, 51, 1);
+$grey-bar:rgba(240, 240, 245, 0.4);
+$grey-icon:rgba(128, 128, 128, 1);
+$grey-icon-disable:rgba(175, 177, 189, 1);
+$grey-border:rgba(94, 94, 94, 1);
+$pink-button:rgba(246, 117, 153, 1);
+
+
 $themes: (
   "dark": (
-    "primary": rgba(18, 18, 18, 1),
-    "secondary": rgba(255, 255, 255, 1),
-    "footer-p": rgba(51, 51, 51, 1),
-    "footer-s": rgba(255, 255, 255, 0.6),
-    "form-s": rgba(255, 255, 255, 0.4),
-    "btn-p": rgba(246, 117, 153, 1),
-    "btn-s": rgba(255, 255, 255, 1),
-    "icon-number-active-p": rgba(255, 255, 255, 1),
-    "icon-number-active-s": rgba(51, 51, 51, 1),
-    "icon-number-active-d": rgba(255, 255, 255, 1),
-    "icon-number-disable": rgba(255, 255, 255, 0.4),
-    "icon-bar-active": rgba(255, 255, 255, 1),
-    "icon-bar-disable": rgba(240, 240, 245, 0.4),
-    "icon-count-background": rgba(128, 128, 128, 1),
-    "icon-count-font": rgba(51, 51, 51, 1),
+    "primary": $black-primary,
+    "secondary": $white,
+    "footer-p": $grey-footer,
+    "footer-s": $whiteL6,
+    "form-s": $whiteL4,
+    "btn-p": $pink-button,
+    "btn-s": $white,
+    "cart-background":$grey-footer,
+    "icon-number-active-p": $white,
+    "icon-number-active-s": $grey-footer,
+    "icon-number-active-d": $white,
+    "icon-number-disable": $whiteL4,
+    "icon-bar-active": $white,
+    "icon-bar-disable": $grey-bar,
+    "icon-count-background": $grey-icon,
+    "icon-count-font": $grey-footer,
+    "icon-radio-background":$grey-footer,
+    "icon-radio-normal":$grey-footer,
+    "icon-radio-focused":$white,
+    "icon-radio-border":none,
+    "icon-radio-font": $grey-bar,
+    "border":$grey-border,
   ),
   "light": (
-    "primary": rgba(255, 255, 255, 1),
-    "secondary": rgba(0, 0, 0, 1),
-    "footer-p": rgba(246, 247, 248, 1),
-    "footer-s": rgba(128, 128, 128, 1),
-    "form-s": rgba(128, 128, 128, 1),
-    "btn-p": rgba(246, 117, 153, 1),
-    "btn-s": rgba(255, 255, 255, 1),
-    "icon-number-active-p": rgba(42, 42, 42, 1),
-    "icon-number-active-s": rgba(51, 51, 51, 1),
-    "icon-number-active-d": rgba(255, 255, 255, 1),
-    "icon-number-disable": rgba(175, 177, 189, 1),
-    "icon-bar-active": rgba(0, 0, 0, 1),
-    "icon-bar-disable": rgba(240, 240, 245, 1),
-    "icon-count-background": rgba(240, 240, 245, 1),
-    "icon-count-font": rgba(0, 0, 0, 1),
+    "primary": $white,
+    "secondary": $black,
+    "footer-p": $white-footer,
+    "footer-s": $grey-icon,
+    "form-s": $grey-icon,
+    "btn-p": $pink-button,
+    "btn-s": $white,
+    "cart-background":$white,
+    "icon-number-active-p": $black-icon,
+    "icon-number-active-s": $grey-footer,
+    "icon-number-active-d": $white,
+    "icon-number-disable": $grey-icon-disable,
+    "icon-bar-active": $black,
+    "icon-bar-disable": $white-icon-disable,
+    "icon-count-background": $white-icon-disable,
+    "icon-count-font": $black,
+    "icon-radio-background":$black-icon,
+    "icon-radio-normal":$white,
+    "icon-radio-focused":$white,
+    "icon-radio-border":$black-icon-border,
+    "icon-radio-font": $black,
+    "border":$white-icon-disable,
   ),
 );
 

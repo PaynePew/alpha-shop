@@ -1,12 +1,10 @@
 //stepper
 
 .stepper {
-  &__title {
-    @include font(3, 3);
-  }
   &__container {
     @extend %flex;
     justify-content: space-between;
+    margin: 32px 0;
   }
   &__item {
     @extend %flex;
@@ -31,7 +29,7 @@
     border-radius: 50%;
     margin-right: 8px;
     font-family: $number-font-family;
-    @include font(0,3,16px);
+    @include font(0, 3, 16px);
     @include themeGen($themes) {
       border: 1px solid getThemeVal(icon-number-active-p);
       color: getThemeVal(icon-number-active-p);
@@ -71,14 +69,12 @@
     &--disable {
       @include themeGen($themes) {
         border: 2px solid getThemeVal(icon-bar-disable);
-        color: getThemeVal(icon-bar-disable);
+        background-color: getThemeVal(icon-bar-disable);
       }
     }
   }
 
   @include desktop {
-    
-    
     &__des {
       display: block;
     }

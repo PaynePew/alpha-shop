@@ -1,5 +1,8 @@
 //Address Form
 
+//Build by Grid System, but Replaced by normalForm
+//Keep it for further use.
+
 .address {
   @extend %flex;
   flex-wrap: wrap;
@@ -43,7 +46,12 @@
     border: 1px solid #4a4a4a;
     border-radius: 4px;
     height:40px;
+    background: none;
+    @include themeGen($themes) {
+      color: getThemeVal(secondary);
+    }
   }
+
   @include desktop{
     max-width: 540px;
     &__content{
@@ -71,4 +79,8 @@
       grid-column: 5/12;
     }
   }
+}
+
+option{
+  color:black;
 }

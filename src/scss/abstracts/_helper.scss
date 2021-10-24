@@ -1,22 +1,16 @@
 //Helper
 
-.pageOne {
-  transform:translateX(-1000%);
-  position:absolute;
-  visibility:hidden;
-  transition: all 0.4s;
-}
-
-.pageTwo {
-  transform:translateX(-1000%);
-  position:absolute;
-  visibility:hidden;
-  transition: all 0.4s;
-  background-color: grey;
+.pageOne,
+.pageTwo,
+.pageThree {
+  transform: translateX(-1000%);
+  position: absolute;
+  visibility: hidden;
+  transition: transform 0.6s ease ;
 }
 
 .isOpen {
-  transform:translateX(0%);
-  position:relative;
+  transform: translateX(0%) ;
+  position: relative;
   visibility: visible;
 }
