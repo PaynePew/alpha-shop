@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../../scss/vendor/normalize.scss"
-    ],
-    "names": [],
-    "file": "normalize.min.css"
-}

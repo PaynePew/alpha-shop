@@ -3,6 +3,9 @@
   &__img {
     width: 136px;
     height:24px;
+    @include themeGen(){
+      content: getThemeVal(logo)
+    }
   }
   @include desktop {
     &__img {
