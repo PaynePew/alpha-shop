@@ -1,0 +1,106 @@
+//normalForm
+
+.normalForm {
+  @extend %flex;
+  flex-wrap: wrap;
+  &__title {
+    @include themeGen($themes) {
+      color: getThemeVal(secondary);
+    }
+    @include font(3, 3);
+    flex-basis: 100%;
+    margin-bottom: 0px;
+  }
+  &__content {
+    flex-grow: 1;
+    margin-bottom: 24px;
+  }
+  &__group {
+    @extend %flex;
+    flex-direction: column;
+    @include font(0);
+    margin-top: 24px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  &__label {
+    @include themeGen($themes) {
+      color: getThemeVal(form-s);
+    }
+    margin-bottom: 8px;
+  }
+  &__input {
+    padding: 12px 18px;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    height: 40px;
+    background: none;
+    @include themeGen($themes) {
+      color: getThemeVal(secondary);
+    }
+  }
+
+  @include desktop {
+    max-width: 540px;
+    &__group {
+      max-width: 350px;
+    }
+  }
+}
+
+//Custom scale
+.normalForm {
+  &__combine--d-1-1 {
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      .normalForm__group:nth-child(2) {
+        margin-left: 30px;
+      }
+    }
+  }
+  &__combine--d-1-2 {
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      .normalForm__group:nth-child(1) {
+        flex-basis: 30%;
+      }
+      .normalForm__group:nth-child(2) {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  &__combine--1-1 {
+    @extend %flex;
+    justify-content: space-between;
+    .normalForm__group {
+      max-width: 158px;
+    }
+    .normalForm__group:nth-child(2) {
+      margin-left: 30px;
+    }
+    @include desktop {
+      .normalForm__group {
+        max-width: 350px;
+      }
+    }
+  }
+
+  &__combine--1-2 {
+    @extend %flex;
+    justify-content: space-between;
+    .normalForm__group:nth-child(1) {
+      flex-basis: 30%;
+    }
+    .normalForm__group:nth-child(2) {
+      margin-left: 30px;
+    }
+  }
+}
+
+option {
+  color: black;
+}

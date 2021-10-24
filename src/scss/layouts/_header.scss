@@ -1,0 +1,12 @@
+//Header
+
+.header{
+  @include themeGen() {
+    background-color: getThemeVal("primary");
+    color: getThemeVal("secondary");
+  }
+  position: sticky;
+  top:0;
+  z-index:10;
+
+}

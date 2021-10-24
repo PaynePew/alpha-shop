@@ -1,0 +1,34 @@
+//Footer
+.footer {
+  height:284px;
+  @include themeGen($themes) {
+    background-color: getThemeVal(footer-p);
+    color: getThemeVal(secondary);
+  }
+  
+  &__container {
+    width: 100%;
+  }
+  display:none;
+
+  .logo__img {
+    width: 175px;
+  }
+  @include desktop {
+    display:flex;
+    max-width: none;
+    justify-content: center;
+    align-items: center;
+  
+    &__container {
+      max-width:1110px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

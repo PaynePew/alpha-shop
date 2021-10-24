@@ -5,15 +5,406 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alpha Shop</title>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./dist/style/style.min.css" />
   </head>
-  <body>
-    <h1>Hello!!!</h1>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nihil
-      exercitationem facere porro magnam fugiat possimus rerum, nemo vitae
-      laborum, perferendis libero doloribus, ratione quas quo temporibus
-      assumenda! Quaerat, unde.
-    </p>
+  <body class="theme-light">
+    <section class="header">
+      <nav class="navbar">
+        <div class="logo navbar__logo">
+          <a href="#" class="logo__link"
+            ><img class="logo__img" src="src/img/Logo@2x.png" alt="alpha shop"
+          /></a>
+        </div>
+        <img
+          class="navbar__hamburger"
+          src="src/img/bx_bx-menu-alt-left@2x.png"
+          alt=""
+        />
+        <div class="navbar__collapse">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">男款</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">女款</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">最新消息</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">客製商品</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tool navbar__tool">
+          <img class="tool__icon" src="src/img/icon-search@2x.png" alt="" />
+          <img class="tool__icon" src="src/img/icon-cart@2x.png" alt="" />
+          <img
+            class="tool__icon themeButton"
+            src="src/img/icon-dark@2x.png"
+            alt=""
+          />
+        </div>
+      </nav>
+    </section>
+    <section class="modal">
+      <div class="navbar__collapse">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">男款</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">女款</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">最新消息</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">客製商品</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tool navbar__tool">
+        <img class="tool__icon" src="src/img/icon-search@2x.png" alt="" />
+        <img class="tool__icon" src="src/img/icon-cart@2x.png" alt="" />
+        <img
+          class="tool__icon themeButton"
+          src="src/img/icon-dark@2x.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="main">
+      <section class="main__container">
+        <!-- stepper start here -->
+        <div class="main__top">
+          <p class="main__title">結帳</p>
+        </div>
+        <!-- pageOne -->
+        <section class="stepper main__stepper pageOne isOpen">
+          <div class="stepper__container">
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--active">1</span>
+              <span class="stepper__des stepper__des--active">寄送地址</span>
+            </div>
+            <span class="stepper__bar stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--disable">2</span>
+              <span class="stepper__des stepper__des--disable">運送方式</span>
+            </div>
+            <span class="stepper__bar stepper__bar--disable"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--disable">3</span>
+              <span class="stepper__des stepper__des--disable">付款資訊</span>
+            </div>
+          </div>
+        </section>
+        <!-- pageTwo -->
+        <section class="stepper main__stepper pageTwo">
+          <div class="stepper__container">
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--done"
+                >&#10003;</span
+              >
+              <span class="stepper__des stepper__des--done">寄送地址</span>
+            </div>
+            <span class="stepper__bar stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--active">2</span>
+              <span class="stepper__des stepper__des--active">運送方式</span>
+            </div>
+            <span class="stepper__bar stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--disable">3</span>
+              <span class="stepper__des stepper__des--disable">付款資訊</span>
+            </div>
+          </div>
+        </section>
+        <!-- pageThree -->
+        <section class="stepper main__stepper pageThree">
+          <div class="stepper__container">
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--done"
+                >&#10003;</span
+              >
+              <span class="stepper__des stepper__des--done">寄送地址</span>
+            </div>
+            <span class="stepper__bar stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--done"
+                >&#10003;</span
+              >
+              <span class="stepper__des stepper__des--done">運送方式</span>
+            </div>
+            <span class="stepper__bar stepper__bar--active"></span>
+            <div class="stepper__item">
+              <span class="stepper__number stepper__number--active">3</span>
+              <span class="stepper__des stepper__des--active">付款資訊</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="main__content">
+          <!-- stepper start here -->
+          <!-- pageOne -->
+          <form action="" class="normalForm pageOne isOpen">
+            <p class="normalForm__title">寄送地址</p>
+            <div class="normalForm__content">
+              <div class="normalForm__combine--1-2">
+                <div class="normalForm__group">
+                  <label class="normalForm__label" for="">稱謂</label>
+                  <select name="" class="normalForm__input">
+                    <option value="先生">先生</option>
+                    <option value="小姐">小姐</option>
+                  </select>
+                </div>
+                <div class="normalForm__group">
+                  <label for="" class="normalForm__label">姓名</label>
+                  <input
+                    type="text"
+                    placeholder="請輸入姓名"
+                    class="normalForm__input"
+                  />
+                </div>
+              </div>
+              <div class="normalForm__combine--d-1-1">
+                <div class="normalForm__group">
+                  <label for="" class="normalForm__label">電話</label>
+                  <input
+                    type="text"
+                    placeholder="請輸入行動電話"
+                    class="normalForm__input"
+                  />
+                </div>
+                <div class="normalForm__group">
+                  <label for="" class="normalForm__label">Email</label>
+                  <input
+                    type="text"
+                    placeholder="請輸入電子郵件"
+                    class="normalForm__input"
+                  />
+                </div>
+              </div>
+              <div class="normalForm__combine--d-1-2">
+                <div class="normalForm__group">
+                  <label for="" class="normalForm__label">縣市</label>
+                  <select
+                    type="text"
+                    placeholder="請選擇縣市"
+                    class="normalForm__input"
+                  >
+                    <option value="">台北市</option>
+                    <option value="">基隆市</option>
+                    <option value="">新北市</option>
+                    <option value="">桃園市</option>
+                    <option value="">新竹市</option>
+                    <option value="">新竹縣</option>
+                    <option value="">苗栗市</option>
+                    <option value="">台中縣</option>
+                    <option value="">彰化縣</option>
+                    <option value="">南投縣</option>
+                    <option value="">雲林縣</option>
+                    <option value="">嘉義市</option>
+                    <option value="">嘉義縣</option>
+                    <option value="">台南市</option>
+                    <option value="">高雄市</option>
+                    <option value="">屏東縣</option>
+                    <option value="">台東縣</option>
+                    <option value="">花蓮縣</option>
+                    <option value="">宜蘭縣</option>
+                    <option value="">澎湖縣</option>
+                    <option value="">金門縣</option>
+                    <option value="">連江縣</option>
+                  </select>
+                </div>
+                <div class="normalForm__group">
+                  <label for="" class="normalForm__label">地址</label>
+                  <input
+                    type="text"
+                    placeholder="請輸入地址"
+                    class="normalForm__input"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- pageTwo -->
+          <div class="radioForm pageTwo">
+            <p class="radioForm__title">運送方式</p>
+            <div class="radioForm__item">
+              <label for="customRadio-normal" class="radioForm__container">
+                <input
+                  id="customRadio-normal"
+                  type="radio"
+                  class="radioForm__input"
+                  name="shipping"
+                />
+                <span class="radioForm__radio"></span>
+                <div class="radioForm__content">
+                  <div class="radioForm__des">
+                    <span class="radioForm__text">標準運送</span>
+                    <span class="radioForm__text--small">約3~7個工作天</span>
+                  </div>
+                  <span class="radioForm__text--price">免費</span>
+                </div>
+                <div class="radioForm__focusBorder"></div>
+              </label>
+            </div>
+            <div class="radioForm__item">
+              <label for="customRadio-DHL" class="radioForm__container">
+                <input
+                  id="customRadio-DHL"
+                  type="radio"
+                  class="radioForm__input"
+                  name="shipping"
+                />
+                <span class="radioForm__radio"></span>
+                <div class="radioForm__content">
+                  <div class="radioForm__des">
+                    <span class="radioForm__text--bold">DHL貨運</span>
+                    <span class="radioForm__text--small">48小時內送達</span>
+                  </div>
+                  <span class="radioForm__text--price">$500</span>
+                </div>
+                <div class="radioForm__focusBorder"></div>
+              </label>
+            </div>
+          </div>
+          <!-- pageThree -->
+          <form action="" class="normalForm pageThree">
+            <p class="normalForm__title">付款資訊</p>
+            <div class="normalForm__content">
+              <div class="normalForm__group">
+                <label for="" class="normalForm__label">持卡人姓名</label>
+                <input
+                  type="text"
+                  placeholder="John Doe"
+                  class="normalForm__input"
+                />
+              </div>
+              <div class="normalForm__group">
+                <label for="" class="normalForm__label">卡號</label>
+                <input
+                  type="text"
+                  placeholder="1111 2222 3333 4444"
+                  class="normalForm__input"
+                />
+              </div>
+              <div class="normalForm__combine--1-1">
+                <div class="normalForm__group">
+                  <label for="" class="normalForm__label">有效期限</label>
+                  <input
+                    type="text"
+                    placeholder="MM/YY"
+                    class="normalForm__input"
+                  />
+                </div>
+                <div class="normalForm__group">
+                  <label for="" class="normalForm__label">CVC/CCV</label>
+                  <input
+                    type="text"
+                    placeholder="123"
+                    class="normalForm__input"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class="main__sub">
+          <!-- cart start from here! -->
+          <div class="cart">
+            <!-- DOM Manipulate -->
+          </div>
+        </section>
+        <section class="main__subNav">
+          <!-- pageOne -->
+          <div class="pageOne isOpen">
+            <div class="btn__group--scale">
+              <button class="btn btn--scale btn--next">下一步 &#8594;</button>
+            </div>
+          </div>
+          <!-- pageTwo -->
+          <div class="pageTwo">
+            <div class="btn__group--between">
+              <button class="btn btn--pre">&#8592; 上一步</button>
+              <button class="btn btn--next">下一步 &#8594;</button>
+            </div>
+          </div>
+          <!-- pageThree -->
+          <div class="pageThree">
+            <div class="btn__group--between">
+              <button class="btn btn--pre">&#8592; 上一步</button>
+              <button class="btn btn--next">確認下單</button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="footer">
+      <section class="footer__container">
+        <div class="logo footer__logo">
+          <a href="#" class="logo__link"
+            ><img class="logo__img" src="src/img/Logo@2x.png" alt="alpha shop"
+          /></a>
+        </div>
+        <div class="menu footer__menu">
+          <p class="menu__title">客戶服務</p>
+          <ul class="menu__list">
+            <li class="menu__item">運送說明</li>
+            <li class="menu__item">退換貨相關</li>
+            <li class="menu__item">付款資訊</li>
+            <li class="menu__item">FAQ</li>
+          </ul>
+        </div>
+        <div class="menu footer__menu">
+          <p class="menu__title">關於我們</p>
+          <ul class="menu__list">
+            <li class="menu__item">品牌故事</li>
+            <li class="menu__item">媒體連繫</li>
+            <li class="menu__item">Press kit</li>
+          </ul>
+        </div>
+        <div class="menu footer__menu">
+          <p class="menu__title">資訊</p>
+          <ul class="menu__list">
+            <li class="menu__item">隱私權政策</li>
+            <li class="menu__item">Cookie</li>
+            <li class="menu__item">GDPR</li>
+          </ul>
+        </div>
+        <div class="menu footer__menu">
+          <p class="menu__title">追蹤ALPHA SHOP</p>
+          <ul class="menu__list">
+            <li class="menu__item">+886 02123-45678</li>
+            <li class="menu__item">
+              <img
+                class="menu__social"
+                src="src/img/Icon-facebook@2x.png"
+                alt=""
+              />
+              <img
+                class="menu__social"
+                src="src/img/Icon-instagram@2x.png"
+                alt=""
+              />
+              <img
+                class="menu__social"
+                src="src/img/Icon-whatsapp@2x.png"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>

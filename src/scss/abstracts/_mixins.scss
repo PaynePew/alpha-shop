@@ -1,0 +1,66 @@
+//Mixins
+@import "variables";
+
+//字體級距
+@function font($level: 0) {
+  @if $level <0 {
+    $level: 0;
+  }
+  @return $baseSize + $sizeLevel * ($level);
+}
+//字體權重
+@function weight($level: 0) {
+  @if $level <0 {
+    $level: 0;
+  }
+  @return $baseWeight + $weightLevel * round($level);
+}
+
+@function rhythm($size) {
+  @return ($size * $paddingLevel / $baseLineHeight) * $baseLineSize;
+}
+
+@function line($count: 1, $baseLineHeight: 5px) {
+  @return $baseLineHeight * $count;
+}
+
+@mixin font($level: 1, $weightLevel: 0, $line-height: auto) {
+  $size: font($level);
+  $line: rhythm($size);
+
+  font-weight: weight($weightLevel);
+  font-size: $size;
+  @if $line-height == auto or $line-height < $line {
+    line-height: $line;
+  } @else {
+    line-height: $line-height;
+  }
+}
+
+//產生themes
+$scopedTheme: null;
+@mixin themeGen($allThemesMap: $themes) {
+  @each $themeName, $themeMap in $allThemesMap {
+    .theme-#{$themeName} & {
+      // 建立臨時map
+      $scopedTheme: () !global;
+      @each $variableName, $variableValue in $themeMap {
+        // 將themeMap的key value merge進臨時theme
+        $scopedTheme: map-merge(
+          $scopedTheme,
+          (
+            $variableName: $variableValue,
+          )
+        ) !global;
+      }
+      // 傳進如background, color等內容
+      @content;
+      // reset臨時scope
+      $scopedTheme: null !global;
+    }
+  }
+}
+//從臨時scopedTheme拿取value
+@function getThemeVal($themeVar) {
+  @return map-get($scopedTheme, $themeVar);
+}

@@ -1,0 +1,115 @@
+//RadioForm
+
+.radioForm {
+  &__item {
+    margin-bottom: 24px;
+    
+  }
+
+  &__container {
+    @extend %flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    height: 60px;
+    position: relative;
+    border: 1px solid #f0f0f5;
+    border-radius: 4px;
+    padding: 11px 20px;
+    
+    @include themeGen($themes){
+      border-color: getThemeVal(border);
+    }
+    
+  }
+  &__content {
+    width:100%;
+    @extend %flex;
+    justify-content: space-between;
+    font-family: $button-font-family;
+  }
+  &__des {
+    @extend %flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include themeGen($themes) {
+      color: getThemeVal(secondary);
+    }
+    @include font(3, 3);
+    flex-basis: 100%;
+  }
+  &__text {
+    @include font(0.5);
+    margin-bottom:8px;
+
+    &--bold{
+      @include font(0.5,3);
+      margin-bottom: 4px;
+    }
+    &--small{
+      @include font(0);
+      @include themeGen($themes){
+        color: getThemeVal(icon-radio-font);
+      }
+    }
+    &--price{
+      @include font(0,0);
+    }
+  }
+
+
+  &__input {
+    display: none;
+
+    &:checked ~ .radioForm__radio::after {
+      transform: scale(1);
+      transition: transform 0.2s ease;
+    }
+    &:checked ~ .radioForm__radio {
+      @include themeGen($themes){
+        background-color: getThemeVal(icon-radio-background);
+      }
+      transition: transform 0.2s ease;
+    }
+    &:checked ~ .radioForm__focusBorder {
+      border-radius: 4px;
+      border: 1px solid #2a2a2a;
+      transition: all 0.2s ease;
+    }
+  }
+  &__radio {
+    width: 1.25em;
+    height: 1.25em;
+   
+    border-radius: 50%;
+    margin-right: 20px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include themeGen($themes){
+      background-color: getThemeVal(icon-radio-normal);
+      border: 1px solid getThemeVal(icon-radio-border);
+    }
+
+    &::after {
+      content: "";
+      width: 60%;
+      height: 60%;
+      display: block;
+      background: white;
+      border-radius: 50%;
+      transform: scale(0);
+    }
+  }
+  &__focusBorder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+

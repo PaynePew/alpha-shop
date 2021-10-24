@@ -1,0 +1,82 @@
+//stepper
+
+.stepper {
+  &__container {
+    @extend %flex;
+    justify-content: space-between;
+    margin: 32px 0;
+  }
+  &__item {
+    @extend %flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__des {
+    display: none;
+    &--disable {
+      @include themeGen($themes) {
+        color: getThemeVal(icon-number-disable);
+      }
+    }
+  }
+  &__number {
+    position: relative;
+    @extend %flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-family: $number-font-family;
+    @include font(0, 3, 16px);
+    @include themeGen($themes) {
+      border: 1px solid getThemeVal(icon-number-active-p);
+      color: getThemeVal(icon-number-active-p);
+    }
+    &--active {
+      @include themeGen($themes) {
+        border: 1px solid getThemeVal(icon-number-active-p);
+        color: getThemeVal(icon-number-active-p);
+      }
+    }
+    &--done {
+      @include themeGen($themes) {
+        border: 1px solid getThemeVal(icon-number-active-s);
+        background-color: getThemeVal(icon-number-active-s);
+        color: getThemeVal(icon-number-active-d);
+      }
+    }
+    &--disable {
+      @include themeGen($themes) {
+        border: 1px solid getThemeVal(icon-number-disable);
+        color: getThemeVal(icon-number-disable);
+      }
+    }
+  }
+  &__bar {
+    width: 60px;
+    height: 1px;
+    position: relative;
+    top: 12px;
+
+    &--active {
+      @include themeGen($themes) {
+        border: 2px solid getThemeVal(icon-bar-active);
+        background-color: getThemeVal(icon-bar-active);
+      }
+    }
+    &--disable {
+      @include themeGen($themes) {
+        border: 2px solid getThemeVal(icon-bar-disable);
+        background-color: getThemeVal(icon-bar-disable);
+      }
+    }
+  }
+
+  @include desktop {
+    &__des {
+      display: block;
+    }
+  }
+}

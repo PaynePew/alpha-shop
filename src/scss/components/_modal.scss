@@ -1,0 +1,68 @@
+//Modal
+
+.modal{
+  position:fixed;
+  @extend %flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height:1200px;
+  z-index:999;
+  align-items: center;
+  text-align: center;
+  @include themeGen() {
+    background-color: getThemeVal("primary");
+    color: getThemeVal("secondary");
+  }
+
+  .navbar{
+    &__collapse{
+      @extend %flex;
+      flex-direction: column;
+    }
+    &__tool{
+      @extend %flex;
+      justify-content: space-between;
+      align-items: center;
+      width:152px;
+    }
+    &__link{
+      @include font(1, 3);
+      @include themeGen() {
+        color: getThemeVal("secondary");
+      }
+    }
+    &__list{
+      @extend %flex;
+      flex-direction: column;
+      padding:0;
+      margin:0;
+
+    }
+    &__item{
+      @extend %flex;
+      justify-content: center;
+      align-items: center;
+      padding:24px 0;
+      width:330px;
+      @include themeGen() {
+        border-bottom: 1px solid getThemeVal(border);
+      }
+    }
+    &__tool {
+      padding-top:25px;
+      > .tool__icon{
+        @extend %flex;
+        margin:0;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  @include desktop{
+    display: none;
+  }
+}
+
+
