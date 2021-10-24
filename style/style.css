@@ -668,27 +668,27 @@ html {
 }
 
 .theme-dark .tool__icon:nth-child(1) {
-  content: url("/src/img/icon-search-dark@2x.png");
+  content: url("src/img/icon-search-dark@2x.png");
 }
 
 .theme-light .tool__icon:nth-child(1) {
-  content: url("/src/img/icon-search@2x.png");
+  content: url("src/img/icon-search@2x.png");
 }
 
 .theme-dark .tool__icon:nth-child(2) {
-  content: url("/src/img/icon-cart-dark@2x.png");
+  content: url("src/img/icon-cart-dark@2x.png");
 }
 
 .theme-light .tool__icon:nth-child(2) {
-  content: url("/src/img/icon-cart@2x.png");
+  content: url("src/img/icon-cart@2x.png");
 }
 
 .theme-dark .tool__icon:nth-child(3) {
-  content: url("/src/img/icon-dark-light@2x.png");
+  content: url("src/img/icon-dark-light@2x.png");
 }
 
 .theme-light .tool__icon:nth-child(3) {
-  content: url("/src/img/icon-dark@2x.png");
+  content: url("src/img/icon-dark@2x.png");
 }
 
 .logo__img {
@@ -697,11 +697,11 @@ html {
 }
 
 .theme-dark .logo__img {
-  content: url("/src/img/Logo-dark@2x.png");
+  content: url("src/img/Logo-dark@2x.png");
 }
 
 .theme-light .logo__img {
-  content: url("/src/img/Logo@2x.png");
+  content: url("src/img/Logo@2x.png");
 }
 
 @media (min-width: 375px) {
