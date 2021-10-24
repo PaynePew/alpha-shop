@@ -1,6 +1,7 @@
 const pageOne = document.querySelectorAll(".pageOne");
 const pageTwo = document.querySelectorAll(".pageTwo");
 const pageThree = document.querySelectorAll(".pageThree");
+const modal = document.querySelector(".modal");
 
 let pageId = 1;
 
@@ -8,6 +9,7 @@ export const removeClass = (cssName) => {
   pageOne.forEach((el) => el.classList.remove(cssName));
   pageTwo.forEach((el) => el.classList.remove(cssName));
   pageThree.forEach((el) => el.classList.remove(cssName));
+
 };
 
 export const displaySwitch = () => {
@@ -41,3 +43,8 @@ export const prePage = () => {
   return;
 };
 
+export const modalToggle = () => {
+  modal.classList.contains('isOpen') 
+  ? modal.classList.remove('isOpen') 
+  : modal.classList.add('isOpen');
+}
