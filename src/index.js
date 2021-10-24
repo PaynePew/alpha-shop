@@ -6,14 +6,14 @@ import { modalToggle } from "./components/displaySwitch.mjs";
 
 const nextBtn = document.querySelectorAll(".btn--next");
 const preBtn = document.querySelectorAll(".btn--pre");
-const themeButton = document.getElementById("themeButton");
+const themeButton = document.querySelectorAll(".themeButton");
 const cart = document.querySelector(".cart");
 const radioButton = document.querySelectorAll(".radioForm__input");
 const hamburger = document.querySelector(".navbar__hamburger");
 
 nextBtn.forEach((el) => el.addEventListener("click", nextPage));
 preBtn.forEach((el) => el.addEventListener("click", prePage));
-themeButton.addEventListener("click", toggleTheme);
+themeButton.forEach((el) => el.addEventListener("click", toggleTheme));
 
 cart.addEventListener("click", (e) => {
   e.preventDefault();
@@ -32,6 +32,6 @@ radioButton.forEach((el) =>
   })
 );
 
-hamburger.addEventListener('click', modalToggle);
+hamburger.addEventListener("click", modalToggle);
 
 renderCart(cartStore);

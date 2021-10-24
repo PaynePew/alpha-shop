@@ -10,6 +10,10 @@
   z-index:999;
   align-items: center;
   text-align: center;
+  @include themeGen() {
+    background-color: getThemeVal("primary");
+    color: getThemeVal("secondary");
+  }
 
   .navbar{
     &__collapse{
